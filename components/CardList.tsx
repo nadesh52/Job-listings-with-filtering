@@ -13,8 +13,8 @@ export default function CardList() {
   });
 
   return (
-    <div className="px-[24px] pt-[56px] desktop:pt-[40px] pb-[120px]">
-      <div className="flex flex-col desktop:items-center gap-10 desktop:gap-6">
+    <div className="desktop:pt-[40px] px-[24px] pt-[56px] pb-[120px]">
+      <div className="desktop:items-center desktop:gap-6 flex flex-col gap-10">
         {filteredData.map((d: any, i: any) => (
           <div key={i}>
             <Card data={d} />

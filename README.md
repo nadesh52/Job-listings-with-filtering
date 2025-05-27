@@ -13,8 +13,8 @@ This is a solution to the [Job listings with filtering on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://github.com/nadesh52/qrcode-component](https://github.com/nadesh52/qrcode-component)
-- Live Site URL: [https://nadesh52.github.io/qrcode-component/](https://nadesh52.github.io/qrcode-component/)
+- Solution URL: [https://github.com/nadesh52/Job-listings-with-filtering](https://github.com/nadesh52/Job-listings-with-filtering)
+- Live Site URL: [https://nadesh52.github.io/Job-listings-with-filtering](https://nadesh52.github.io/Job-listings-with-filtering)
 
 ## My process
 

@@ -9,44 +9,44 @@ export default function Card({ data }: any) {
   return (
     <div
       className={`${
-        data.featured && "border-s-[5px] border-primary"
-      } bg-white desktop:w-[1110px] desktop:h-[152px] rounded-lg px-[24px] desktop:px-[40px] py-8 shadow-2xl shadow-primary/30 relative`}
+        data.featured && "border-primary border-s-[5px]"
+      } desktop:w-[1110px] desktop:h-[152px] desktop:px-[40px] shadow-primary/30 relative rounded-lg bg-white px-[24px] py-8 shadow-2xl`}
     >
-      <div className="absolute -top-[24px] left-[24px] size-[48px] desktop:hidden">
-        <Image src={`/assets/${data.logo}`} width={88} height={88} alt="logo" />
+      <div className="desktop:hidden absolute -top-[24px] left-[24px] size-[48px]">
+        <Image src={`Job-listings-with-filtering/assets/${data.logo}`} width={88} height={88} alt="logo" />
       </div>
-      <div className="flex flex-col desktop:flex-row justify-between desktop:items-center">
+      <div className="desktop:flex-row desktop:items-center flex flex-col justify-between">
         <div className="flex flex-row gap-6">
-          <div className="size-[88px] hidden desktop:block">
+          <div className="desktop:block hidden size-[88px]">
             <Image
-              src={`/assets/${data.logo}`}
+              src={`Job-listings-with-filtering/assets/${data.logo}`}
               width={88}
               height={88}
               alt="logo"
             />
           </div>
-          <div className="flex flex-col justify-center gap-3 desktop:gap-1">
-            <div className="h-[24px] flex flex-row gap-6 desktop:gap-4">
+          <div className="desktop:gap-1 flex flex-col justify-center gap-3">
+            <div className="desktop:gap-4 flex h-[24px] flex-row gap-6">
               <div className="text-primary font-bold tracking-wider">
                 {data.company}
               </div>
               <div className="flex flex-row gap-2">
                 {data.new && (
-                  <div className="h-[24px]x p-[8px] rounded-full flex items-center justify-center font-medium text-white bg-primary">
+                  <div className="h-[24px]x bg-primary flex items-center justify-center rounded-full p-[8px] font-medium text-white">
                     NEW!
                   </div>
                 )}
                 {data.featured && (
-                  <div className="h-[24px]x p-[8px] rounded-full flex items-center justify-center font-medium text-white bg-secondary-400">
+                  <div className="h-[24px]x bg-secondary-400 flex items-center justify-center rounded-full p-[8px] font-medium text-white">
                     FEATURED
                   </div>
                 )}
               </div>
             </div>
-            <p className="font-bold desktop:text-custom-22 tracking-wide hover:cursor-pointer hover:text-primary">
+            <p className="desktop:text-custom-22 hover:text-primary font-bold tracking-wide hover:cursor-pointer">
               {data.position}
             </p>
-            <div className="flex flex-row gap-[10px] desktop:gap-[18px] text-secondary-300 font-medium">
+            <div className="desktop:gap-[18px] text-secondary-300 flex flex-row gap-[10px] font-medium">
               <div>{data.postedAt}</div>
               <div>·</div>
               <div>{data.contract}</div>
@@ -56,9 +56,9 @@ export default function Card({ data }: any) {
           </div>
         </div>
 
-        <hr className="h-[1px] my-[14px] border-secondary-300" />
+        <hr className="border-secondary-300 my-[14px] h-[1px]" />
 
-        <div className="flex flex-wrap desktop:flex-row gap-4">
+        <div className="desktop:flex-row flex flex-wrap gap-4">
           <button onClick={() => addFilter(data.role)} className="badge-tech">
             {data.role}
           </button>
