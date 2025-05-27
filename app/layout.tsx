@@ -12,7 +12,7 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-secondary-100">{children}</body>
     </html>
   );
 }

@@ -1,1 +1,29 @@
-@import 'tailwindcss'
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import "tailwindcss";
+
+html {
+  font-family: var(--font-spartan);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@theme {
+  --font-spartan: "League Spartan", sans-serif;
+  --color-primary: oklch(0.6726 0.073955 195.5371);
+  --color-secondary-100: oklch(0.9775 0.0112 196.97);
+  --color-secondary-200: oklch(0.9678 0.0084 197.02);
+  --color-secondary-300: oklch(0.6325 0.0225 196.6);
+  --color-secondary-400: oklch(0.3363 0.0187 196.3);
+
+  --breakpoint-desktop: 1440px;
+  --breakpoint-mobile: 375px;
+
+  --text-custom-22: 21px;
+  --text-custom-22--line-height: 32px;
+}
+
+@layer base {
+  .badge-tech {
+    @apply px-[8px] py-[4px] text-primary bg-secondary-200 font-bold tracking-wide rounded hover:bg-primary hover:text-white hover:cursor-pointer;
+  }
+}

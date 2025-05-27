@@ -1,9 +1,11 @@
 import React from "react";
+import Wrapper from "@/components/Wrapper";
 
 export default function page() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <section>
+      <div className="h-[156px] bg-primary bg-[url('/assets/images/bg-header-desktop.svg')]"></div>
+      <Wrapper />
+    </section>
   );
 }
