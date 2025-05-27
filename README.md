@@ -13,8 +13,8 @@ This is a solution to the [Job listings with filtering on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://github.com/nadesh52/Job-listings-with-filtering](https://github.com/nadesh52/Job-listings-with-filtering)
-- Live Site URL: [https://nadesh52.github.io/Job-listings-with-filtering](https://nadesh52.github.io/Job-listings-with-filtering)
+- Solution URL: [https://github.com/nadesh52/list-with-filter](https://github.com/nadesh52/list-with-filter)
+- Live Site URL: [https://nadesh52.github.io/list-with-filter](https://nadesh52.github.io/list-with-filter)
 
 ## My process
 

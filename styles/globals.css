@@ -20,6 +20,8 @@ html {
 
   --text-custom-22: 21px;
   --text-custom-22--line-height: 32px;
+
+  --background-image-header: url('/assets/images/bg-header-desktop.svg');
 }
 
 @layer base {
