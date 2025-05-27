@@ -13,13 +13,13 @@ export default function Card({ data }: any) {
       } desktop:w-[1110px] desktop:h-[152px] desktop:px-[40px] shadow-primary/30 relative rounded-lg bg-white px-[24px] py-8 shadow-2xl`}
     >
       <div className="desktop:hidden absolute -top-[24px] left-[24px] size-[48px]">
-        <Image src={`Job-listings-with-filtering/assets/${data.logo}`} width={88} height={88} alt="logo" />
+        <Image src={`/list-with-filter/assets/${data.logo}`} width={88} height={88} alt="logo" />
       </div>
       <div className="desktop:flex-row desktop:items-center flex flex-col justify-between">
         <div className="flex flex-row gap-6">
           <div className="desktop:block hidden size-[88px]">
             <Image
-              src={`Job-listings-with-filtering/assets/${data.logo}`}
+              src={`/list-with-filter/assets/${data.logo}`}
               width={88}
               height={88}
               alt="logo"
